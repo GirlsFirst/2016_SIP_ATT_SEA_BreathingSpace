@@ -1,0 +1,52 @@
+body{
+
+background-image:  url('vacances.jpg');
+background-repeat: no-repeat;
+
+background-size: cover;
+
+}
+
+h1 {
+
+	font-size: 3em;
+
+	color: black;
+
+	text-align: center;
+
+	font-weight: lighter;
+
+	font-family: 'Domine', serif;
+
+	letter-spacing: 20px;
+
+	position: absolute;
+
+	bottom: 60px;
+
+	right: 600px;
+
+}
+
+/*video#bgVideo {
+
+position: fixed;
+
+right: 0;
+
+bottom: 0;
+
+width: auto;
+
+min-width: 100%;
+
+height: auto;
+
+min-height: 100%;
+
+z-index: -100;    
+
+background-size: cover;
+
+}

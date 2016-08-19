@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <style>
+
+      #map {
+
+        width: 100%;
+
+        height: 400px;
+
+        background-color: grey;
+
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <h3>My Google Maps Demo</h3>
+
+    <div id="map"></div>
+
+ <script>
+
+      function initMap() {
+
+        var mapDiv = document.getElementById('map');
+
+        var map = new google.maps.Map(mapDiv, {
+
+            center: {lat: 47.220734, lng: -122.549969},
+
+            zoom: 15
+
+        });
+
+      }
+
+   var marker;
+
+
+
+
+function initMap() {
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+
+    zoom: 13,
+
+    center: {lat: 47.220734, lng: -122.549969}
+
+  });
+
+
+
+
+  marker = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: -16.504865, lng: -151.676699}
+
+  });
+
+  marker.addListener('click', toggleBounce);
+
+ marker2 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 41.381051, lng: 2.17495}
+
+   });
+
+  marker2.addListener('click', toggleBounce);
+
+ marker3 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: -22.909147, lng: -43.199615}
+
+   });
+
+  marker3.addListener('click', toggleBounce);
+
+  marker4 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 18.420825, lng: -64.625015}
+
+   });
+
+  marker4.addListener('click', toggleBounce);
+
+  marker5 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 8.3405, lng: 115.0920}
+
+   });
+
+  marker5.addListener('click', toggleBounce);
+
+  marker6 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 25.2048, lng: 55.2708}
+
+   });
+
+  marker6.addListener('click', toggleBounce);
+
+  marker7 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 20.798363, lng: -156.331925}
+
+   });
+
+  marker7.addListener('click', toggleBounce);
+
+  marker8 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 25.761680, lng: -80.191790}
+
+   });
+
+  marker8.addListener('click', toggleBounce);
+
+  marker9 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 29.951066, lng: -90.071532}
+
+   });
+
+  marker9.addListener('click', toggleBounce);
+
+  marker10 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 33.748995, lng: -84.387982}
+
+   });
+
+  marker10.addListener('click', toggleBounce);
+
+  marker11 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 34.052234, lng: -118.243685}
+
+   });
+
+  marker11.addListener('click', toggleBounce);
+
+  marker12 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 36.270421, lng: -121.807976}
+
+   });
+
+  marker12.addListener('click', toggleBounce);
+
+  marker13 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 32.776664, lng: -96.796988}
+
+   });
+
+  marker13.addListener('click', toggleBounce);
+
+  marker14 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 36.169941, lng: -115.139830}
+
+   });
+
+  marker14.addListener('click', toggleBounce);
+
+  marker15 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 39.191098, lng: -106.817536}
+
+   });
+
+  marker15.addListener('click', toggleBounce);
+
+  marker16 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 41.725736, lng: -88.208164}
+
+   });
+
+  marker16.addListener('click', toggleBounce);
+
+  marker17 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 43.479929, lng: -110.762428}
+
+   });
+
+  marker17.addListener('click', toggleBounce);
+
+  marker18 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 39.481654, lng: -106.038352}
+
+   });
+
+  marker18.addListener('click', toggleBounce);
+
+  marker19 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 42.551443, lng: 140.761925}
+
+   });
+
+  marker19.addListener('click', toggleBounce);
+
+   marker20 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 33.660946, lng: -117.709952}
+
+   });
+
+  marker20.addListener('click', toggleBounce);
+
+   marker21= new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 45.479067, lng: 9.845243}
+
+   });
+
+  marker21.addListener('click', toggleBounce);
+
+   marker22 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 55.676097, lng: 12.568337}
+
+   });
+
+  marker22.addListener('click', toggleBounce);
+
+   marker23 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 53.349805, lng: -6.260310}
+
+   });
+
+  marker23.addListener('click', toggleBounce);
+
+   marker24 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 59.913869, lng: 10.752245}
+
+   });
+
+  marker24.addListener('click', toggleBounce);
+
+   marker25 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 42.551443, lng: 140.761925}
+
+   });
+
+  marker25.addListener('click', toggleBounce); 
+
+  marker26 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 59.329323, lng: 18.068581}
+
+   });
+
+  marker26.addListener('click', toggleBounce);
+
+   marker27 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 60.169856, lng: 24.938379}
+
+   });
+
+  marker27.addListener('click', toggleBounce);
+
+   marker28 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 64.126521, lng: -21.817439}
+
+   });
+
+  marker28.addListener('click', toggleBounce);
+
+   marker29 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 45.501689, lng: -73.567256}
+
+   });
+
+  marker29.addListener('click', toggleBounce);
+
+   marker30 = new google.maps.Marker({
+
+    map: map,
+
+    draggable: false,
+
+    animation: google.maps.Animation.DROP,
+
+    position: {lat: 32.307800, lng: -64.750500}
+
+   });
+
+  marker30.addListener('click', toggleBounce);
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+ }
+
+
+
+
+function toggleBounce() {
+
+  if (marker.getAnimation() !== null) {
+
+    marker.setAnimation(null);
+
+  } else {
+
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+
+  }
+
+}
+
+    </script>
+
+    <script async defer
+
+        src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyDAX6BVKes8tYXedIiSe8Nne9rYBFXJ59g&callback=initMap">
+
+    </script>
+
+ </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
